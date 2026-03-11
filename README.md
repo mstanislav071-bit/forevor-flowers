@@ -1,26 +1,39 @@
-
-[Моят сайт.html](https://github.com/user-attachments/files/25913993/default.html)
-
 <!DOCTYPE html>
 <html lang="bg">
 <head>
     <meta charset="UTF-8">
-    <title>Моят магазин за цветя</title>
+    <title>Цветен Свят - Онлайн Магазин</title>
     <style>
-        /* Тук ще направим дизайна по-късно */
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #4a90e2; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f4f4; text-align: center; }
+        .container { display: flex; justify-content: center; gap: 20px; padding: 50px; }
+        .card { background: white; padding: 20px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); width: 200px; }
+        button { background: #4a90e2; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #357abd; }
+        h1 { color: #333; }
     </style>
 </head>
 <body>
 
-    <h1>Добре дошли в нашия магазин за цветя!</h1>
-    <p>Тук скоро ще може да разгледате нашите ръчно изработени цветя.</p>
+    <h1>Магазин за Ръчно Изработени Цветя</h1>
+    <p>Избери своя любим букет:</p>
 
-    <form action="https://formspree.io/f/ВАШИЯТ_ИМЕЙЛ_КОД" method="POST">
-        <input type="email" name="email" placeholder="Твоят имейл" required>
-        <button type="submit">Изпрати ми съобщение</button>
-    </form>
+    <div class="container">
+        <div class="card">
+            <h3>Червени Рози</h3>
+            <p>Цена: 20 лв.</p>
+            <button onclick="alert('Поръчката е добавена!')">Купи сега</button>
+        </div>
+        <div class="card">
+            <h3>Полеви Цветя</h3>
+            <p>Цена: 15 лв.</p>
+            <button onclick="alert('Поръчката е добавена!')">Купи сега</button>
+        </div>
+        <div class="card">
+            <h3>Орхидеи</h3>
+            <p>Цена: 25 лв.</p>
+            <button onclick="alert('Поръчката е добавена!')">Купи сега</button>
+        </div>
+    </div>
 
 </body>
 </html>
